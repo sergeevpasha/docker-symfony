@@ -41,6 +41,7 @@ RUN apt-get -o Acquire::Check-Valid-Until=false update \
     libicu-dev g++ \
     gnupg2 \
     curl \
+    git \
     && pecl install xdebug \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
